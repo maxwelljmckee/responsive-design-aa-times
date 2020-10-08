@@ -1,6 +1,6 @@
 .masthead{
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     "menu-and-search . actions"
     ". technologies ."
@@ -14,19 +14,63 @@
 .masthead__actions {
     grid-area: actions;
     padding: 10px;
-    /* display: relative; */
+    text-align: end;
 }
 .masthead__technologies {
     grid-area: technologies;
+    display: flex;
+    /* position: relative;
+    top: 1px; */
+    max-height: 20px;
+    background-color: white;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-template-rows: 11px 0fr;
+    text-align: center;
 }
 .masthead__date {
     grid-area: date;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    font-size: 11px;
+    padding-bottom: 11px;
 }
+
+.masthead__icon-button {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.masthead__icon-button:hover {
+    background-color: #f7f7f5;
+}
+
 .masthead__logo {
     grid-area: logo;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    padding-bottom: 11px;
+    padding-top: 20px;
+    text-align: center;
 }
 .masthead__paper {
     grid-area: paper;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 11px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    padding-bottom: 11px;
 }
 
 .masthead__button{
@@ -37,4 +81,28 @@
 
 .masthead__button:hover{
     background-color: #f7f7f5;
+}
+
+.masthead__technology-list{
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    color:#6f6f6f;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: relative;
+    top: 1px;
+    background-color: white;
+}
+
+.masthead__technology{
+    margin: 0 4px;
+}
+
+.masthead__logo,
+.masthead__date,
+.masthead__paper {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
 }
