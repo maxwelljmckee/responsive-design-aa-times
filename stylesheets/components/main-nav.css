@@ -1,0 +1,11 @@
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbar__link a {
+  font-size: 12px;
+  padding: 10px 12px;
+}

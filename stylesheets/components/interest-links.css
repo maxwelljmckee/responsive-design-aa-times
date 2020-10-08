@@ -1,0 +1,55 @@
+.interests-bar {
+  display: grid;
+  max-width: 1400px;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 1fr;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+.interests-bar__image {
+  padding: 0 4px;
+}
+
+.interests-bar__text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4px;
+  font-size: 11px;
+  margin: 0;
+  border-right: 1px solid #e2e2e2;
+}
+
+.interests-bar__text > span {
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.interests-bar__stocks {
+  border-right: 1px solid #e2e2e2;
+  display: grid;
+  grid-template: repeat(3, 1fr) / 100%;
+  padding: 0 15px;
+}
+
+.interests-bar__stocks-item1,
+.interests-bar__stocks-item2,
+.interests-bar__stocks-item3 {
+  display: flex;
+  justify-content: space-between;
+  font-family: "nyt-franklin, helvetica, arial, sans-serif";
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+.interests-bar__stocks-item1,
+.interests-bar__stocks-item2 {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.interests-bar__stocks-value {
+  color: green;
+}
